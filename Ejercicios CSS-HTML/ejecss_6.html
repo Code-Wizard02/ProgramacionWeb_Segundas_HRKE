@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    h3 {
+      text-align: center;
+      font-size: xx-large;
+      font-weight: bolder;
+    }
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #06616d;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #04394e;
+      
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #3894ae;
+      padding: 20px;
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    body {
+      background-color: #117086;
+
+    }
+
+    label {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: large;
+    }
+
+    select{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: auto;
+    }
+  </style>
+  <body>
+    <h3>Formulario de Reinscripción</h3>
+
+    <div>
+        <label for="cboCampus">Campus</label>
+        <select id="cboCampus" name="cboCampus">
+          <option>Seleccionar</option>
+          <option value="ITO">ITO</option>
+          <option value="ITVO">ITVO</option>
+          <option value="ITA">ITA</option>
+          <option value="ITAT">ITAT</option>
+          <option value="ITBB">ITBB</option>
+        </select>
+
+        <label for="cboCarrera">Carrera</label>
+        <select id="cboCarrera" name="cboCarrera">
+          <option>Seleccionar</option>
+          <option value="Ingenieria en Sistemas Computacionales">
+            Ingenieria en Sistemas Computacionales
+          </option>
+          <option value="Ingenieria Mecanica">Ingenieria Mecanica</option>
+          <option value="Ingenieria en Gestion Empresarial">
+            Ingenieria en Gestion Empresarial
+          </option>
+          <option value="Ingenieria Ambiental">Ingenieria Ambiental</option>
+          <option value="Ingenieria Civil">Ingenieria Civil</option>
+        </select>
+
+        <label for="cboTurno">Turno</label>
+        <select id="cboTurno" name="cboTurno">
+          <option>Seleccionar</option>
+          <option value="Matutino">Matutino</option>
+          <option value="Vespertino">Vespertino</option>
+        </select>
+
+        <br><br>
+        <label for="txtnombre">Nombre</label>
+        <input
+          type="text"
+          id="fname"
+          name="txtnombre"
+          placeholder="Escribe tu nombre.."
+        />
+
+        <label for="txtapellidoPaterno">Apellido Paterno</label>
+        <input
+          type="text"
+          id="apellidoPaterno"
+          name="txtapellidoPaterno"
+          placeholder="Ingrese su apellido paterno.."
+        />
+
+        <label for="txtapellidoMaterno">Apellido Materno</label>
+        <input
+          type="text"
+          id="apellidoMaterno"
+          name="txtapellidoMaterno"
+          placeholder="Ingrese su apellido materno.."
+        />
+
+        <label>Genero:</label>
+        <label for="generoMasculino">Masculino</label>
+        <input type="radio" id="generoMasculino" name="genero" value="Masculino" />
+        <label for="generoFemenino">Femenino</label>
+        <input type="radio" id="generoFemenino" name="genero" value="Femenino" />
+        <br><br>
+
+        <label for="cboDia">Día</label>
+        <select id="cboDia" name="cboDia">
+          <option>Seleccionar</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+
+        <label for="cboMes">Mes</label>
+        <select id="cboMes" name="cboMes">
+          <option>Seleccionar</option>
+          <option value="Enero">Enero</option>
+          <option value="Febrero">Febrero</option>
+          <option value="Marzo">Marzo</option>
+          <option value="Abril">Abril</option>
+          <option value="Mayo">Mayo</option>
+          <option value="Junio">Junio</option>
+          <option value="Julio">Julio</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Septiembre">Septiembre</option>
+          <option value="Octubre">Octubre</option>
+          <option value="Noviembre">Noviembre</option>
+          <option value="Diciembre">Diciembre</option>
+        </select>
+
+
+        <label for="cboAño">Año</label>
+        <select id="cboAño" name="cboAño">
+          <option>Seleccionar</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+        </select>
+
+        <label for="cboProcedencia">Escuela de Procedencia</label>
+        <select id="cboProcedencia" name="cboProcedencia">
+          <option>Seleccionar</option>
+          <option value="CBTIS">CBTIS</option>
+          <option value="CBTAS">CBTAS</option>
+          <option value="CBTA">CBTA</option>
+          <option value="CETIS">CETIS</option>
+          <option value="CETMAR">CETMAR</option>
+        </select>
+
+        <input type="submit" value="Aceptar" />
+      </form>
+    </div>
+  </body>
+</html>
